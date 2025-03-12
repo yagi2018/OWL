@@ -25,6 +25,10 @@ from pathlib import Path
 
 def main():
     """主函数，启动OWL智能助手运行平台"""
+    
+    # 设置默认编码为 UTF-8
+    os.environ['PYTHONIOENCODING']='utf-8'
+
     # 确保当前目录是项目根目录
     project_root = Path(__file__).resolve().parent
     os.chdir(project_root)
